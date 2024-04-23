@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Hide
+  - Enemy
+  - Exit
+  - Exit_Museum
+  - Exit_Hallway
+  - Exit_Break
+  - Exit_Security
+  - Exit_Office
+  - KeepObj
+  - KeepObjB
   layers:
   - Default
   - TransparentFX
