@@ -25,13 +25,13 @@ public class ChangeSceneToSettings : MonoBehaviour
     public void OnClick()
     {
         previousScene=SceneManager.GetActiveScene().name;
-        SceneManager.LoadScene("OptionsMenu");
+        SceneManager.LoadScene("OptionsMenu", LoadSceneMode.Additive);
     }
 
     public void OnClickSettings()
     {
 
-        SceneManager.LoadScene(previousScene);
+        SceneManager.UnloadScene("OptionsMenu");
     }
 
     public void HintClick()

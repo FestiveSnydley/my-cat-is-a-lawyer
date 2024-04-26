@@ -20,6 +20,7 @@ public class InventoryController : MonoBehaviour
     // Default inventory size.
     public int inventorySize = 10;
 
+    private static bool isPaused = false;
     private static InventoryController instance;
 
     /// <summary>
@@ -87,49 +88,58 @@ public class InventoryController : MonoBehaviour
             item.name, item.Description);
     }
 
+    public void TogglePause()
+    {
+        isPaused = !isPaused;
+    }
+
+    public void PauseInventory()
+    {
+        isPaused = true;
+    }
+
+    public void UnpauseInventory()
+    {
+        isPaused = false;
+    }
+
+    public void InventorySummon()
+    {
+        SceneManager.LoadScene("InventoryScreen", LoadSceneMode.Additive);
+    }
     /// <summary>
     /// Called every frame.
     /// </summary>
     public void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha2))
+        if (isPaused == true)
         {
-            Debug.Log(SceneManager.GetActiveScene().buildIndex);
+            return;
         }
-
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        else
         {
-            if (SceneManager.GetActiveScene().buildIndex == 0)
+            // Toggle the visibility of the inventory UI when the 'I' key is pressed.
+            if (Input.GetKeyDown(KeyCode.I))
             {
-                SceneManager.LoadScene(1);
-            }
-            else
-            {
-                SceneManager.LoadScene(0);
-            }
-
-        }
-
-        // Toggle the visibility of the inventory UI when the 'I' key is pressed.
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            // If the inventory page UI is not active, show it.
-            if (inventoryPageUI.isActiveAndEnabled == false)
-            {
-                inventoryPageUI.Show();
-
-                // Update the UI with the current state of the inventory data.
-                foreach (var item in inventoryData.GetCurrentInventoryState())
+                // If the inventory page UI is not active, show it.
+                if (inventoryPageUI.isActiveAndEnabled == false)
                 {
-                    inventoryPageUI.UpdateData(item.Key, item.Value.item.ItemImage);
-                }
+                    inventoryPageUI.Show();
 
-            }
-            else
-            {
-                // If the inventory page UI is active, hide it.
-                inventoryPageUI.Hide();
+                    // Update the UI with the current state of the inventory data.
+                    foreach (var item in inventoryData.GetCurrentInventoryState())
+                    {
+                        inventoryPageUI.UpdateData(item.Key, item.Value.item.ItemImage);
+                    }
+
+                }
+                else
+                {
+                    // If the inventory page UI is active, hide it.
+                    inventoryPageUI.Hide();
+                }
             }
         }
+        
     }
 }

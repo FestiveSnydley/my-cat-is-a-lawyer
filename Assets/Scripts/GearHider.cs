@@ -15,7 +15,7 @@ public class GearHider : MonoBehaviour
 
         if (gear != null)
         {
-            gear.SetActive(false);
+            return;
         }
         else
         {
@@ -28,7 +28,19 @@ public class GearHider : MonoBehaviour
     {
 
     }
-    public void OnClick()
+    public void HideGear()
+    {
+        if (gear != null)
+        {
+            gear.SetActive(false);
+        }
+        else
+        {
+            Debug.LogWarning("Object marked as 'SettingsGear' not found.");
+        }
+        
+    }
+    public void ShowGear()
     {
         if (gear != null)
         {
@@ -38,6 +50,6 @@ public class GearHider : MonoBehaviour
         {
             Debug.LogWarning("Object marked as 'SettingsGear' not found.");
         }
-        
+
     }
 }
