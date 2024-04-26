@@ -6,7 +6,7 @@ using UnityEngine;
 //To prevent errors/hidePrompt from being deleted once scene is exited. For convenience, also storing info abt spawn location
 public class dontDestroy : MonoBehaviour
 {
-    public string startingPoint = "hallway";
+    public string startingPoint = "paintingRoom";
     //private static GameObject instance = null;
     private dontDestroy[] objArray;
     private static dontDestroy savedLevelData;

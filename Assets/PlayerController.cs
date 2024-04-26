@@ -10,6 +10,7 @@ using UnityEngine.SceneManagement; //needed to change scenes
 public class playerController : MonoBehaviour
 {
     public GameObject player;
+    public GameObject lookTo;
     public float movementSpeed = 2f;
     public TextMeshProUGUI hideText;
     public GameObject hidePrompt;
@@ -67,6 +68,8 @@ public class playerController : MonoBehaviour
         if(movementEnabled)
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")); //get input from controller/keyboard
 
+        //for rotating with movement
+
         //for hiding
         if(hidePrompt.activeSelf && (hideText.text == "Press [Z] to exit!" || hideText.text == "Press [Z] to hide!")) //player is near something they can hide in
         {
@@ -115,7 +118,6 @@ public class playerController : MonoBehaviour
                 SceneManager.LoadScene(hallScene);
              }
         }
-
     }
 
     void FixedUpdate() {
