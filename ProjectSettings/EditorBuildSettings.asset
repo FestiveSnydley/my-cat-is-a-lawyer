@@ -41,4 +41,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScreen.unity
     guid: a837acc92dd8d9b49a1eb409e029910f
+  - enabled: 1
+    path: Assets/Scenes/Inbetween.unity
+    guid: 9be43c1b902a3a6459998ef8ca51b6e6
+  - enabled: 1
+    path: Assets/Scenes/InventoryScreen.unity
+    guid: 8695a60edf842fb4da0e2aaa2baeeecd
   m_configObjects: {}

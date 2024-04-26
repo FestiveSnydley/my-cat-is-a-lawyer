@@ -31,7 +31,7 @@ public class ChangeSceneToSettings : MonoBehaviour
     public void OnClickSettings()
     {
 
-        SceneManager.UnloadScene("OptionsMenu");
+        SceneManager.UnloadSceneAsync("OptionsMenu");
     }
 
     public void HintClick()
