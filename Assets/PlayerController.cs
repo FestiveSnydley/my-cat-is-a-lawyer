@@ -10,8 +10,9 @@ using UnityEngine.SceneManagement; //needed to change scenes
 public class playerController : MonoBehaviour
 {
     public GameObject player;
-    public GameObject lookTo;
+    public GameObject sprite;
     public float movementSpeed = 2f;
+    public float rotationSpeed = 2f;
     public TextMeshProUGUI hideText;
     public GameObject hidePrompt;
     private Rigidbody2D rigB; //set private bc it's refering to player object (this)
@@ -33,8 +34,7 @@ public class playerController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    {   
         //respawning -- accessing saved data
         savedExitDataObj = GameObject.FindWithTag("KeepObj");
         savedScript = savedExitDataObj.GetComponent<dontDestroy>();
@@ -67,6 +67,12 @@ public class playerController : MonoBehaviour
     {
         if(movementEnabled)
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")); //get input from controller/keyboard
+        
+        //rotate -- set to player's rb2d in fixed update
+        if(movementDirection != Vector2.zero) {
+            float angle = Mathf.Atan2(movementDirection.y, movementDirection.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle+270, Vector3.forward);
+        }
 
         //for rotating with movement
 
@@ -92,7 +98,8 @@ public class playerController : MonoBehaviour
                 hiding = false;
                 GetComponent<Renderer>().enabled = true; //makes player visible
                 movementEnabled=true;
-                player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.None;
+                player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
             }
         }
 
@@ -121,10 +128,10 @@ public class playerController : MonoBehaviour
     }
 
     void FixedUpdate() {
-        if(movementEnabled)
-        rigB.velocity = movementDirection*movementSpeed; //actual movement of character
+        if(movementEnabled && movementDirection != Vector2.zero)
+        //rigB.velocity = movementDirection*movementSpeed; //actual movement of character
+        rigB.MovePosition(rigB.position + movementDirection * movementSpeed * Time.fixedDeltaTime);
 
-        
     }
 
     void OnTriggerEnter2D(Collider2D other) //Recall that colliders are hit boxes. Also, TAGS ARE CASE SENSITIVE!!!

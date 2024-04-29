@@ -75,6 +75,13 @@ public class playerController_B : MonoBehaviour
         if(movementEnabled)
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")); //get input from controller/keyboard
 
+        //rotate -- set to player's rb2d in fixed update
+        if(movementDirection != Vector2.zero) {
+            float angle = Mathf.Atan2(movementDirection.y, movementDirection.x) * Mathf.Rad2Deg; //get angle direction
+            transform.rotation = Quaternion.AngleAxis(angle+270, Vector3.forward);
+        }
+
+
         //for hiding
         if(hidePrompt.activeSelf && (hideText.text == "Press [Z] to exit!" || hideText.text == "Press [Z] to hide!")) //player is near something they can hide in
         {
@@ -98,6 +105,7 @@ public class playerController_B : MonoBehaviour
                 GetComponent<Renderer>().enabled = true; //makes player visible
                 movementEnabled=true;
                 player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.None;
+                player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation; //keep rotation from glitching out (freeze Z)
             }
         }
 
