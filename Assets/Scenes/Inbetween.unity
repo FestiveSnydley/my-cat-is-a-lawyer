@@ -336,7 +336,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 775777002}
-  - component: {fileID: 775777001}
+  - component: {fileID: 775777003}
   m_Layer: 0
   m_Name: PauseInventory
   m_TagString: Untagged
@@ -344,21 +344,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &775777001
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 775777000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47451738aea18b94fa3a8748c64baa9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryPageUI: {fileID: 0}
-  inventoryData: {fileID: 0}
-  inventorySize: 10
 --- !u!4 &775777002
 Transform:
   m_ObjectHideFlags: 0
@@ -374,6 +359,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &775777003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 775777000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71b616068719eb942a55d6acc7a8d33a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1094648881
 GameObject:
   m_ObjectHideFlags: 0
@@ -738,8 +735,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 136
-    y: 115
+    x: 137
+    y: 116
     width: 100
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -777,10 +774,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1609591182}
-  selectedCommands:
-  - {fileID: 1609591186}
+  selectedBlocks: []
+  selectedCommands: []
   variables: []
   description: 
   stepPause: 0
@@ -846,9 +841,9 @@ MonoBehaviour:
   staticEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 775777001}
-        m_TargetAssemblyTypeName: InventoryController, Assembly-CSharp
-        m_MethodName: InventorySummon
+      - m_Target: {fileID: 775777003}
+        m_TargetAssemblyTypeName: InventoryPauser, Assembly-CSharp
+        m_MethodName: InvSummon
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -858,9 +853,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 775777001}
-        m_TargetAssemblyTypeName: InventoryController, Assembly-CSharp
-        m_MethodName: PauseInventory
+      - m_Target: {fileID: 775777003}
+        m_TargetAssemblyTypeName: InventoryPauser, Assembly-CSharp
+        m_MethodName: Pause
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -94,12 +94,12 @@ public class InventoryController : MonoBehaviour
         isPaused = !isPaused;
     }
 
-    public void PauseInventory()
+    public static void PauseInventory()
     {
         isPaused = true;
     }
 
-    public void UnpauseInventory()
+    public static void UnpauseInventory()
     {
         isPaused = false;
     }
@@ -109,7 +109,7 @@ public class InventoryController : MonoBehaviour
        SceneManager.LoadScene("Inbetween");
     }
 
-    public void InventorySummon()
+    public static void InventorySummon()
     {
         SceneManager.LoadScene("InventoryScreen", LoadSceneMode.Additive);
     }

@@ -1210,53 +1210,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1283600734}
   m_CullTransparentMesh: 1
---- !u!1 &1435887365
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1435887367}
-  - component: {fileID: 1435887366}
-  m_Layer: 0
-  m_Name: PauseInventory
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1435887366
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435887365}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 47451738aea18b94fa3a8748c64baa9e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventoryPageUI: {fileID: 0}
-  inventoryData: {fileID: 0}
-  inventorySize: 10
---- !u!4 &1435887367
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1435887365}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1693525580
 GameObject:
   m_ObjectHideFlags: 0
@@ -1411,7 +1364,6 @@ GameObject:
   - component: {fileID: 1846575360}
   - component: {fileID: 1846575361}
   - component: {fileID: 1846575363}
-  - component: {fileID: 1846575364}
   - component: {fileID: 1846575365}
   m_Layer: 0
   m_Name: Flowchart
@@ -1459,8 +1411,7 @@ MonoBehaviour:
   blockName: SceneStart
   description: 
   eventHandler: {fileID: 1846575351}
-  commandList:
-  - {fileID: 1846575364}
+  commandList: []
   suppressAllAutoSelections: 0
 --- !u!114 &1846575353
 MonoBehaviour:
@@ -1673,50 +1624,6 @@ MonoBehaviour:
   parentBlock: {fileID: 1846575356}
   suppressBlockAutoSelect: 0
   targetButton: {fileID: 2147154579}
---- !u!114 &1846575364
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1846575350}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 8
-  indentLevel: 0
-  description: 
-  delay: 0
-  invokeType: 0
-  staticEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  booleanParameter:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  booleanEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  integerParameter:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  integerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  floatParameter:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  floatEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stringParameter:
-    stringRef: {fileID: 0}
-    stringVal: 
-  stringEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1846575365
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -1998,6 +1905,5 @@ SceneRoots:
   - {fileID: 1846575354}
   - {fileID: 666510502}
   - {fileID: 519420032}
-  - {fileID: 1435887367}
   - {fileID: 768232499}
   - {fileID: 832137581}
