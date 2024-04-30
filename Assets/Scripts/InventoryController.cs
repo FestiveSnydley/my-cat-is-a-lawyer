@@ -78,8 +78,10 @@ public class InventoryController : MonoBehaviour
         Item inventoryItem = inventoryData.GetItemAt(itemIndex);
 
         // If the item is empty, no further action is taken.
-        if (inventoryItem.IsEmpty)
+        if (inventoryItem.IsEmpty) { 
+            inventoryPageUI.ResetSelection();
             return;
+        }
 
         // Get the data of the item in the inventory.
         ItemSO item = inventoryItem.item;
@@ -89,30 +91,48 @@ public class InventoryController : MonoBehaviour
             item.name, item.Description);
     }
 
+    /// <summary>
+    /// Toggle the pause state of the inventory.
+    /// </summary>
     public void TogglePause()
     {
         isPaused = !isPaused;
     }
 
+    /// <summary>
+    /// Pause, stopping the player from accessing their inventory.
+    /// </summary>
     public static void PauseInventory()
     {
         isPaused = true;
     }
 
+    /// <summary>
+    /// Unpause and allow the player to access their inventory once more.
+    /// </summary>
     public static void UnpauseInventory()
     {
         isPaused = false;
     }
+
 
     public void LoadInbetween()
     {
        SceneManager.LoadScene("Inbetween");
     }
 
+    /// <summary>
+    /// Load the inventory screen if it isn't loaded already.
+    /// </summary>
     public static void InventorySummon()
     {
-        SceneManager.LoadScene("InventoryScreen", LoadSceneMode.Additive);
+        Scene inventoryScene = SceneManager.GetSceneByName("InventoryScreen");
+        if (!inventoryScene.isLoaded)
+        {
+            SceneManager.LoadScene("InventoryScreen", LoadSceneMode.Additive);
+        }
     }
+
     /// <summary>
     /// Called every frame.
     /// </summary>
