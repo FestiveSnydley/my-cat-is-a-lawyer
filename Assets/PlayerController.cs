@@ -20,6 +20,9 @@ public class playerController : MonoBehaviour
     private bool movementEnabled;
     private bool hiding = false;
 
+    //for whether the tutorial is complete
+    public GameObject tutorial;
+
     //respawn stuff
     private bool paintingRoomEntry = true;
     public Transform paintingRspwnPt; // for if the player is entering this room from the museum painting room
@@ -65,6 +68,11 @@ public class playerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(tutorial.activeSelf == false)
+        movementEnabled = false;
+        else
+        movementEnabled = true;
+
         if(movementEnabled)
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")); //get input from controller/keyboard
         
