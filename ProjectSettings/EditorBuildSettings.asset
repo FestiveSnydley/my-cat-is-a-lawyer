@@ -47,4 +47,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/InventoryScreen.unity
     guid: 8695a60edf842fb4da0e2aaa2baeeecd
+  - enabled: 1
+    path: Assets/Scenes/AAADirect Examination/SAM DIRECT FROM SALLY.unity
+    guid: 33497b186e0eb8d469f89761d1cf0997
+  - enabled: 1
+    path: Assets/Scenes/AAACROSSEXAMS/SAM CROSS FROM ATTICUS.unity
+    guid: 33ca822797f326a489095e483c51caf0
+  - enabled: 1
+    path: Assets/Scenes/AAADirect Examination/FIONA DIRECT FROM ATTICUS.unity
+    guid: 711bf0eab7282af47a30725042bfd236
+  - enabled: 1
+    path: Assets/Scenes/AAACROSSEXAMS/FIONA CROSS FROM SALLY.unity
+    guid: d82e961f149de5e42b5ef82e288a6cad
+  - enabled: 1
+    path: Assets/Scenes/AAADirect Examination/MICHAEL DIRECT FROM SALLY.unity
+    guid: 244e5fe3af5256c4f9f5b1874363b3ca
+  - enabled: 1
+    path: Assets/Scenes/AAACROSSEXAMS/MICHAEL CROSS FROM ATTICUS.unity
+    guid: 1f4faacec845ec24fb5548f72985fe39
+  - enabled: 1
+    path: Assets/Scenes/AAADirect Examination/IVY DIRECT FROM ATTICUS - Copy.unity
+    guid: 14733471a37ebb849ac78716ac09063c
+  - enabled: 1
+    path: Assets/Scenes/AAACROSSEXAMS/IVY CROSS FROM SALLY - Copy.unity
+    guid: 55bc728ca20c1424fa334300250d9762
+  - enabled: 1
+    path: Assets/Scenes/AAAVERDICT/VERDICT - Copy.unity
+    guid: ecec4f53fa8a1c34f8d863acedf5ae8f
   m_configObjects: {}

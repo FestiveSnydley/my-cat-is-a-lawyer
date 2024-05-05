@@ -420,8 +420,7 @@ MonoBehaviour:
   nameText: Judge
   nameColor: {r: 0.9254902, g: 0.48235294, b: 0.19607843, a: 1}
   soundEffect: {fileID: 8300000, guid: 124184555ec434aa68814be3bd116c26, type: 3}
-  portraits:
-  - {fileID: 21300000, guid: d2a3f22cffe84ad408e5fabd953ab2de, type: 3}
+  portraits: []
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -548,8 +547,7 @@ MonoBehaviour:
   nameColor: {r: 0.9254902, g: 0.48235294, b: 0.19607843, a: 1}
   soundEffect: {fileID: 8300000, guid: 124184555ec434aa68814be3bd116c26, type: 3}
   portraits:
-  - {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
-  - {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
+  - {fileID: 21300000, guid: a5fcc917a0872eb4583c7984447ab970, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -915,7 +913,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 246cf722aa0c5254da9e93415501fd4d, type: 3}
+  - {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -1139,7 +1137,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &941195763
@@ -1401,8 +1399,8 @@ MonoBehaviour:
   nameColor: {r: 0.9254902, g: 0.48235294, b: 0.19607843, a: 1}
   soundEffect: {fileID: 8300000, guid: 124184555ec434aa68814be3bd116c26, type: 3}
   portraits:
-  - {fileID: 21300000, guid: 519ec5b24acf4464ea7898f4b3a43888, type: 3}
-  - {fileID: 21300000, guid: 044bf29c4f83e15409ad8fb4db263bf4, type: 3}
+  - {fileID: 21300000, guid: 478f4d48388034a4997d5cfbfd87b285, type: 3}
+  - {fileID: 21300000, guid: 5d5b272af19b56f459f341c6944a8638, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -1453,8 +1451,7 @@ MonoBehaviour:
   nameText: Jury member
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
-  portraits:
-  - {fileID: 21300000, guid: ed3f5dd119e6015479f898ab63bab12b, type: 3}
+  portraits: []
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1739,7 +1736,6 @@ GameObject:
   - component: {fileID: 1762419280}
   - component: {fileID: 1762419279}
   - component: {fileID: 1762419340}
-  - component: {fileID: 1762419343}
   - component: {fileID: 1762419347}
   - component: {fileID: 1762419354}
   - component: {fileID: 1762419353}
@@ -1814,7 +1810,6 @@ GameObject:
   - component: {fileID: 1762419431}
   - component: {fileID: 1762419432}
   - component: {fileID: 1762419433}
-  - component: {fileID: 1762419434}
   - component: {fileID: 1762419437}
   - component: {fileID: 1762419436}
   - component: {fileID: 1762419435}
@@ -2026,9 +2021,7 @@ MonoBehaviour:
   - {fileID: 1762418852}
   - {fileID: 1762419340}
   - {fileID: 1762419113}
-  - {fileID: 1762419434}
   - {fileID: 1762419626}
-  - {fileID: 1762419343}
   - {fileID: 1762419625}
   - {fileID: 1762419624}
   - {fileID: 1762419623}
@@ -2074,9 +2067,8 @@ MonoBehaviour:
     width: 1939.0176
     height: 2009.5223
   selectedBlocks:
-  - {fileID: 1762419593}
-  selectedCommands:
-  - {fileID: 1762419628}
+  - {fileID: 1762419590}
+  selectedCommands: []
   variables:
   - {fileID: 1762418854}
   - {fileID: 1762419218}
@@ -2289,36 +2281,6 @@ MonoBehaviour:
   targetAlpha:
     floatRef: {fileID: 0}
     floatVal: 0
---- !u!114 &1762419343
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762418838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 551
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 1371145768}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: ed3f5dd119e6015479f898ab63bab12b, type: 3}
-  offset: 0
-  fromPosition: {fileID: 2100653595}
-  toPosition: {fileID: 618353029}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 1
-  shiftIntoPlace: 0
-  waitUntilFinished: 1
 --- !u!114 &1762419347
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -4965,36 +4927,6 @@ MonoBehaviour:
   scope: 2
   key: TAPES
   value: 0
---- !u!114 &1762419434
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762418838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 645
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 152325498}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d2a3f22cffe84ad408e5fabd953ab2de, type: 3}
-  offset: 0
-  fromPosition: {fileID: 1630754904}
-  toPosition: {fileID: 614363674}
-  facing: 1
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 1
-  shiftIntoPlace: 0
-  waitUntilFinished: 1
 --- !u!114 &1762419435
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13579,7 +13511,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1369560500}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 044bf29c4f83e15409ad8fb4db263bf4, type: 3}
+  portrait: {fileID: 21300000, guid: 5d5b272af19b56f459f341c6944a8638, type: 3}
   offset: 0
   fromPosition: {fileID: 12289473}
   toPosition: {fileID: 1377165235}
@@ -13609,7 +13541,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 217035099}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
+  portrait: {fileID: 21300000, guid: a5fcc917a0872eb4583c7984447ab970, type: 3}
   offset: 0
   fromPosition: {fileID: 12289473}
   toPosition: {fileID: 1413923009}
@@ -13620,7 +13552,7 @@ MonoBehaviour:
   shiftOffset: {x: 0, y: 0}
   move: 1
   shiftIntoPlace: 0
-  waitUntilFinished: 1
+  waitUntilFinished: 0
 --- !u!114 &1762419625
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -13677,7 +13609,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1762419627
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13704,7 +13636,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1762419628
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13718,7 +13650,7 @@ MonoBehaviour:
   indentLevel: 0
   storyText: 'We the jury find the defendant guilty of grand theft.
 
-    
+
 
 '
   description: 
@@ -13735,7 +13667,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1762419629
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -13756,7 +13688,7 @@ MonoBehaviour:
   callMode: 0
 --- !u!114 &1762419630
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -14342,7 +14274,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1913490734

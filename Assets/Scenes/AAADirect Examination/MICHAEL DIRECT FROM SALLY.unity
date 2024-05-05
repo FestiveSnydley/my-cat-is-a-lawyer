@@ -420,8 +420,7 @@ MonoBehaviour:
   nameText: Judge
   nameColor: {r: 0.9254902, g: 0.48235294, b: 0.19607843, a: 1}
   soundEffect: {fileID: 8300000, guid: 124184555ec434aa68814be3bd116c26, type: 3}
-  portraits:
-  - {fileID: 21300000, guid: d2a3f22cffe84ad408e5fabd953ab2de, type: 3}
+  portraits: []
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -548,8 +547,7 @@ MonoBehaviour:
   nameColor: {r: 0.9254902, g: 0.48235294, b: 0.19607843, a: 1}
   soundEffect: {fileID: 8300000, guid: 124184555ec434aa68814be3bd116c26, type: 3}
   portraits:
-  - {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
-  - {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
+  - {fileID: 21300000, guid: a5fcc917a0872eb4583c7984447ab970, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -991,7 +989,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 246cf722aa0c5254da9e93415501fd4d, type: 3}
+  - {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -1478,7 +1476,7 @@ MonoBehaviour:
   nameColor: {r: 0.9254902, g: 0.48235294, b: 0.19607843, a: 1}
   soundEffect: {fileID: 8300000, guid: 124184555ec434aa68814be3bd116c26, type: 3}
   portraits:
-  - {fileID: 21300000, guid: 37f90d658780c7e4488e57e5406c5df9, type: 3}
+  - {fileID: 21300000, guid: 8a3a4181a7ebb7542ba12d13523293f0, type: 3}
   portraitsFace: 1
   setSayDialog: {fileID: 0}
   description: 
@@ -1530,7 +1528,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: ed3f5dd119e6015479f898ab63bab12b, type: 3}
+  - {fileID: 21300000, guid: 8a3a4181a7ebb7542ba12d13523293f0, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -1845,9 +1843,7 @@ GameObject:
   - component: {fileID: 1762419589}
   - component: {fileID: 1762419588}
   - component: {fileID: 1762419590}
-  - component: {fileID: 1762419595}
   - component: {fileID: 1762419594}
-  - component: {fileID: 1762419593}
   - component: {fileID: 1762419592}
   - component: {fileID: 1762419591}
   - component: {fileID: 1762419597}
@@ -1874,6 +1870,7 @@ GameObject:
   - component: {fileID: 1762419606}
   - component: {fileID: 1762419619}
   - component: {fileID: 1762419620}
+  - component: {fileID: 1762419621}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1962,7 +1959,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1590.425, y: 2444.4158}
+  scrollPos: {x: 1881.8008, y: 3293.14}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 403.33334
@@ -1976,7 +1973,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1762419456}
   selectedCommands:
-  - {fileID: 1762419620}
+  - {fileID: 1762419453}
   variables:
   - {fileID: 1762418854}
   - {fileID: 1762419218}
@@ -2206,7 +2203,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 778032011}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 246cf722aa0c5254da9e93415501fd4d, type: 3}
+  portrait: {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
   offset: 0
   fromPosition: {fileID: 12289473}
   toPosition: {fileID: 1913490735}
@@ -2232,8 +2229,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -651.7397
-    y: -2704.8271
+    x: -654.4063
+    y: -2707.494
     width: 175.33334
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -4876,7 +4873,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1369560500}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 37f90d658780c7e4488e57e5406c5df9, type: 3}
+  portrait: {fileID: 21300000, guid: 8a3a4181a7ebb7542ba12d13523293f0, type: 3}
   offset: 0
   fromPosition: {fileID: 2100653595}
   toPosition: {fileID: 618353029}
@@ -5116,8 +5113,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -934.5287
-    y: -1515.9214
+    x: -942.5287
+    y: -1513.2546
     width: 92.66667
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
@@ -5132,9 +5129,8 @@ MonoBehaviour:
   - {fileID: 1762419597}
   - {fileID: 1762419596}
   - {fileID: 1762419453}
-  - {fileID: 1762419595}
   - {fileID: 1762419594}
-  - {fileID: 1762419593}
+  - {fileID: 1762419621}
   - {fileID: 1762419620}
   suppressAllAutoSelections: 0
 --- !u!114 &1762419459
@@ -6936,36 +6932,6 @@ MonoBehaviour:
   fadeWhenDone:
     booleanRef: {fileID: 0}
     booleanVal: 1
---- !u!114 &1762419593
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762418838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 812
-  indentLevel: 0
-  display: 2
-  stage: {fileID: 0}
-  character: {fileID: 152325498}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 0}
-  offset: 0
-  fromPosition: {fileID: 614363674}
-  toPosition: {fileID: 1630754904}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 1
-  shiftIntoPlace: 0
-  waitUntilFinished: 1
 --- !u!114 &1762419594
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -6993,36 +6959,6 @@ MonoBehaviour:
   stopVoiceover: 1
   waitForVO: 0
   setSayDialog: {fileID: 0}
---- !u!114 &1762419595
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762418838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 810
-  indentLevel: 0
-  display: 1
-  stage: {fileID: 0}
-  character: {fileID: 152325498}
-  replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: d2a3f22cffe84ad408e5fabd953ab2de, type: 3}
-  offset: 0
-  fromPosition: {fileID: 1630754904}
-  toPosition: {fileID: 614363674}
-  facing: 0
-  useDefaultSettings: 1
-  fadeDuration: 0.5
-  moveDuration: 1
-  shiftOffset: {x: 0, y: 0}
-  move: 1
-  shiftIntoPlace: 0
-  waitUntilFinished: 1
 --- !u!114 &1762419596
 MonoBehaviour:
   m_ObjectHideFlags: 2
@@ -7041,7 +6977,7 @@ MonoBehaviour:
     off here."
   description: 
   character: {fileID: 217035099}
-  portrait: {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7068,7 +7004,7 @@ MonoBehaviour:
   storyText: 'Did the prosecutor just smile? '
   description: 
   character: {fileID: 217035099}
-  portrait: {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
+  portrait: {fileID: 0}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -7096,7 +7032,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1371145768}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: ed3f5dd119e6015479f898ab63bab12b, type: 3}
+  portrait: {fileID: 21300000, guid: 8a3a4181a7ebb7542ba12d13523293f0, type: 3}
   offset: 0
   fromPosition: {fileID: 1630754904}
   toPosition: {fileID: 1881911086}
@@ -7126,7 +7062,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 217035099}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
+  portrait: {fileID: 21300000, guid: a5fcc917a0872eb4583c7984447ab970, type: 3}
   offset: 0
   fromPosition: {fileID: 1630754904}
   toPosition: {fileID: 1421300126}
@@ -7243,7 +7179,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 778032011}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 246cf722aa0c5254da9e93415501fd4d, type: 3}
+  portrait: {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
   offset: 0
   fromPosition: {fileID: 1913490735}
   toPosition: {fileID: 520667238}
@@ -7273,11 +7209,11 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 778032011}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 246cf722aa0c5254da9e93415501fd4d, type: 3}
+  portrait: {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
   offset: 0
   fromPosition: {fileID: 520667238}
   toPosition: {fileID: 1913490735}
-  facing: 0
+  facing: 2
   useDefaultSettings: 1
   fadeDuration: 0.5
   moveDuration: 1
@@ -7447,11 +7383,11 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 778032011}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 246cf722aa0c5254da9e93415501fd4d, type: 3}
+  portrait: {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
   offset: 0
   fromPosition: {fileID: 520667238}
   toPosition: {fileID: 1913490735}
-  facing: 0
+  facing: 2
   useDefaultSettings: 1
   fadeDuration: 0.5
   moveDuration: 1
@@ -7558,7 +7494,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 1371145768}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: ed3f5dd119e6015479f898ab63bab12b, type: 3}
+  portrait: {fileID: 21300000, guid: 8a3a4181a7ebb7542ba12d13523293f0, type: 3}
   offset: 0
   fromPosition: {fileID: 1630754904}
   toPosition: {fileID: 1881911086}
@@ -7588,7 +7524,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 217035099}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: a15a010def0071648821ce5dc776393f, type: 3}
+  portrait: {fileID: 21300000, guid: a5fcc917a0872eb4583c7984447ab970, type: 3}
   offset: 0
   fromPosition: {fileID: 1630754904}
   toPosition: {fileID: 1421300126}
@@ -7618,7 +7554,7 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 778032011}
   replacedCharacter: {fileID: 0}
-  portrait: {fileID: 21300000, guid: 246cf722aa0c5254da9e93415501fd4d, type: 3}
+  portrait: {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
   offset: 0
   fromPosition: {fileID: 1913490735}
   toPosition: {fileID: 520667238}
@@ -7711,6 +7647,36 @@ MonoBehaviour:
     stringVal: Assets/Scenes/AAACROSSEXAMS/MICHAEL CROSS FROM ATTICUS.unity
   loadingImage: {fileID: 0}
   sceneNameOLD: 
+--- !u!114 &1762419621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 840
+  indentLevel: 0
+  display: 2
+  stage: {fileID: 0}
+  character: {fileID: 1369560500}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 0}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 2100653595}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 1
+  shiftIntoPlace: 0
+  waitUntilFinished: 1
 --- !u!1 &1881911085
 GameObject:
   m_ObjectHideFlags: 0
