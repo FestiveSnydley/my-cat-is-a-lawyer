@@ -1092,7 +1092,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1467291086}
   selectedCommands:
-  - {fileID: 1467291090}
+  - {fileID: 1467291089}
   variables:
   - {fileID: 1467291093}
   description: 
@@ -1138,7 +1138,7 @@ MonoBehaviour:
     from.
   description: 
   character: {fileID: 1729786245}
-  portrait: {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  portrait: {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1166,7 +1166,7 @@ MonoBehaviour:
     Once you've done that, drag the card into the envelope.
   description: 
   character: {fileID: 1729786245}
-  portrait: {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  portrait: {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1194,7 +1194,7 @@ MonoBehaviour:
     to dust it.
   description: 
   character: {fileID: 1729786245}
-  portrait: {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  portrait: {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1222,7 +1222,7 @@ MonoBehaviour:
     powder to visualize the print.
   description: 
   character: {fileID: 1729786245}
-  portrait: {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  portrait: {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -1521,7 +1521,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1467291106
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1540,7 +1540,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &1467291107
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1567,7 +1567,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &1467291108
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1588,7 +1588,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1467291109
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1609,7 +1609,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1467291110
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1630,7 +1630,7 @@ MonoBehaviour:
   targetGameObjectOLD: {fileID: 0}
 --- !u!114 &1467291111
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1684,7 +1684,7 @@ MonoBehaviour:
   suppressAllAutoSelections: 0
 --- !u!114 &1467291113
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -2131,7 +2131,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  - {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
