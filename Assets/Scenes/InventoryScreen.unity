@@ -491,6 +491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryPageUI: {fileID: 1045090435}
   inventoryData: {fileID: 11400000, guid: 092417c860c48cd4f90ffe57fa29f100, type: 2}
+  profileData: {fileID: 11400000, guid: a6bbe65452acf034085f99df3b1ab793, type: 2}
   inventorySize: 10
 --- !u!4 &1760877748
 Transform:

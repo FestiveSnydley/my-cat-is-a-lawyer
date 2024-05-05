@@ -19,8 +19,15 @@ public class InventoryController : MonoBehaviour
     [SerializeField]
     private InventorySO inventoryData;
 
+    [SerializeField]
+    private InventorySO profileData;
+
     // Default inventory size.
     public int inventorySize = 10;
+
+    private bool ProfileOpen = false;
+    private bool InventoryOpen = false;
+
 
     private static bool isPaused = false;
     private static InventoryController instance;
@@ -72,24 +79,54 @@ public class InventoryController : MonoBehaviour
     /// <param name="itemIndex">Index of the requested item.</param>
     private void HandleDescriptionRequest(int itemIndex)
     {
-        // Log a message to indicate the description request.
-        Debug.Log("Description requested.");
+        if(InventoryOpen == true)
+        {
+            // Log a message to indicate the description request.
+            Debug.Log("Description requested.");
 
-        // Retrieve the actual item in the inventory and its associated data.
-        InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
+            // Retrieve the actual item in the inventory and its associated data.
+            InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
 
-        // If the item is empty, no further action is taken.
-        if (inventoryItem.IsEmpty) { 
-            inventoryPageUI.ResetSelection();
-            return;
+            // If the item is empty, no further action is taken.
+            if (inventoryItem.IsEmpty)
+            {
+                inventoryPageUI.ResetSelection();
+                return;
+            }
+
+            // Get the data of the item in the inventory.
+            ItemSO item = inventoryItem.item;
+
+            // Update the inventory page UI with the item's data.
+            inventoryPageUI.UpdateDescription(itemIndex, item.ItemImage,
+                item.Name, item.Description);
+
         }
 
-        // Get the data of the item in the inventory.
-        ItemSO item = inventoryItem.item;
+        if (ProfileOpen == true)
+        {
+            // Log a message to indicate the description request.
+            Debug.Log("Description requested.");
 
-        // Update the inventory page UI with the item's data.
-        inventoryPageUI.UpdateDescription(itemIndex, item.ItemImage,
-            item.Name, item.Description);
+            // Retrieve the actual item in the inventory and its associated data.
+            InventoryItem inventoryItem = profileData.GetItemAt(itemIndex);
+
+            // If the item is empty, no further action is taken.
+            if (inventoryItem.IsEmpty)
+            {
+                inventoryPageUI.ResetSelection();
+                return;
+            }
+
+            // Get the data of the item in the inventory.
+            ItemSO item = inventoryItem.item;
+
+            // Update the inventory page UI with the item's data.
+            inventoryPageUI.UpdateDescription(itemIndex, item.ItemImage,
+                item.Name, item.Description);
+
+        }
+
     }
 
     /// <summary>
@@ -111,6 +148,8 @@ public class InventoryController : MonoBehaviour
                 {
                     inventoryPageUI.Show();
 
+                    InventoryOpen = true;
+
                     // Update the UI with the current state of the inventory data.
                     foreach (var item in inventoryData.GetCurrentInventoryState())
                     {
@@ -120,10 +159,71 @@ public class InventoryController : MonoBehaviour
                 }
                 else
                 {
-                    // If the inventory page UI is active, hide it.
-                    inventoryPageUI.Hide();
+                    if (ProfileOpen == true)
+                    {
+
+                        inventoryPageUI.ResetPage();
+                        foreach (var item in inventoryData.GetCurrentInventoryState())
+                        {
+                            inventoryPageUI.UpdateData(item.Key, item.Value.item.ItemImage);
+                        }
+
+                        ProfileOpen = false;
+                        InventoryOpen = true;
+                    }
+                    else
+                    {
+                        // If the inventory page UI is active, hide it.
+                        inventoryPageUI.Hide();
+                        InventoryOpen = false;
+                    }
+
                 }
             }
+
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                // If the inventory page UI is not active, show it.
+                if (inventoryPageUI.isActiveAndEnabled == false)
+                {
+                    inventoryPageUI.Show();
+
+                    ProfileOpen = true;
+
+                    // Update the UI with the current state of the inventory data.
+                    foreach (var item in profileData.GetCurrentInventoryState())
+                    {
+                        inventoryPageUI.UpdateData(item.Key, item.Value.item.ItemImage);
+                    }
+
+                }
+                else
+                {
+                    if(InventoryOpen == true)
+                    {
+                        inventoryPageUI.ResetPage();
+                        foreach (var item in profileData.GetCurrentInventoryState())
+                        {
+                            inventoryPageUI.UpdateData(item.Key, item.Value.item.ItemImage);
+                        }
+
+                        ProfileOpen = true;
+                        InventoryOpen = false;
+                    }
+                    else
+                    {
+                        // If the inventory page UI is active, hide it.
+                        inventoryPageUI.Hide();
+                        ProfileOpen = false;
+                    }
+                    
+                }
+            }
+
+
+
+
+
         }
         
     }

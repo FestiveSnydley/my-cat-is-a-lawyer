@@ -125,6 +125,13 @@ public class InventoryPage : MonoBehaviour
         DeselectAllItems();
     }
 
+    public void ResetPage()
+    {
+        itemDescription.ResetDescription();
+        DeselectAllItems();
+        ResetAllItems();
+    }
+
     /// <summary>
     /// Deselects all items (slots) in the inventory.
     /// </summary>
@@ -133,6 +140,14 @@ public class InventoryPage : MonoBehaviour
         foreach (InventorySlot slot in listOfSlots)
         {
             slot.Deselect();
+        }
+    }
+
+    private void ResetAllItems()
+    {
+        foreach (InventorySlot slot in listOfSlots)
+        {
+            slot.ResetData();
         }
     }
 
