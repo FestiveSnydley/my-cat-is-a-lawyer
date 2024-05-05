@@ -1216,7 +1216,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &941195763
@@ -1873,6 +1873,7 @@ GameObject:
   - component: {fileID: 1762419607}
   - component: {fileID: 1762419606}
   - component: {fileID: 1762419619}
+  - component: {fileID: 1762419620}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1961,7 +1962,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1379.7585, y: 3943.0825}
+  scrollPos: {x: 1590.425, y: 2444.4158}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 403.33334
@@ -1972,8 +1973,10 @@ MonoBehaviour:
     y: -920.02234
     width: 1939.0176
     height: 2009.5223
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1762419456}
+  selectedCommands:
+  - {fileID: 1762419620}
   variables:
   - {fileID: 1762418854}
   - {fileID: 1762419218}
@@ -5132,6 +5135,7 @@ MonoBehaviour:
   - {fileID: 1762419595}
   - {fileID: 1762419594}
   - {fileID: 1762419593}
+  - {fileID: 1762419620}
   suppressAllAutoSelections: 0
 --- !u!114 &1762419459
 MonoBehaviour:
@@ -7688,6 +7692,25 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
+--- !u!114 &1762419620
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 839
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Assets/Scenes/AAACROSSEXAMS/MICHAEL CROSS FROM ATTICUS.unity
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &1881911085
 GameObject:
   m_ObjectHideFlags: 0
@@ -7844,7 +7867,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1913490734

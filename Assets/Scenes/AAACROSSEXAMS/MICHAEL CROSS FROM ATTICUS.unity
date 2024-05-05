@@ -1135,7 +1135,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &941195763
@@ -1548,6 +1548,8 @@ GameObject:
   - component: {fileID: 1762419517}
   - component: {fileID: 1762419518}
   - component: {fileID: 1762419519}
+  - component: {fileID: 1762419521}
+  - component: {fileID: 1762419520}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1640,7 +1642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1034.9695, y: 4063.5557}
+  scrollPos: {x: 688.30273, y: 2159.5557}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 396.66666
@@ -1651,8 +1653,10 @@ MonoBehaviour:
     y: -920.02234
     width: 1939.0176
     height: 2009.5223
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1762418858}
+  selectedCommands:
+  - {fileID: 1762419520}
   variables:
   - {fileID: 1762418854}
   - {fileID: 1762419218}
@@ -1726,6 +1730,7 @@ MonoBehaviour:
   - {fileID: 1762419434}
   - {fileID: 1762419437}
   - {fileID: 1762419436}
+  - {fileID: 1762419520}
   suppressAllAutoSelections: 0
 --- !u!114 &1762418886
 MonoBehaviour:
@@ -9478,7 +9483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 1176.7448
+    x: 1168.7448
     y: -2480.6023
     width: 124.666664
     height: 40
@@ -9490,6 +9495,7 @@ MonoBehaviour:
   eventHandler: {fileID: 0}
   commandList:
   - {fileID: 1762419518}
+  - {fileID: 1762419521}
   suppressAllAutoSelections: 0
 --- !u!114 &1762419508
 MonoBehaviour:
@@ -10152,6 +10158,44 @@ MonoBehaviour:
   scope: 2
   key: JURY
   value: 0
+--- !u!114 &1762419520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 734
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Assets/Scenes/AAADirect Examination/IVY DIRECT FROM ATTICUS - Copy.unity
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1762419521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 733
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Assets/Scenes/AAADirect Examination/IVY DIRECT FROM ATTICUS - Copy.unity
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &1902388655
 GameObject:
   m_ObjectHideFlags: 0
@@ -10233,7 +10277,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1913490734

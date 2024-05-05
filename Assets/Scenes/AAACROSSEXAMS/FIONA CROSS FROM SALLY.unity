@@ -582,7 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 1762418855}
+  selectedFlowchart: {fileID: 0}
 --- !u!4 &242908468
 Transform:
   m_ObjectHideFlags: 1
@@ -1135,7 +1135,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &941195763
@@ -1805,6 +1805,7 @@ GameObject:
   - component: {fileID: 1762419579}
   - component: {fileID: 1762419578}
   - component: {fileID: 1762419577}
+  - component: {fileID: 1762419581}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1893,7 +1894,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 1773.1697, y: 3697.9553}
+  scrollPos: {x: 1255.8362, y: 1359.2878}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 403.33334
@@ -1904,7 +1905,8 @@ MonoBehaviour:
     y: -920.02234
     width: 1939.0176
     height: 2009.5223
-  selectedBlocks: []
+  selectedBlocks:
+  - {fileID: 1762419456}
   selectedCommands: []
   variables:
   - {fileID: 1762418854}
@@ -7011,7 +7013,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: -403.86194
+    x: -409.19525
     y: -1001.25476
     width: 92.66667
     height: 40
@@ -7026,6 +7028,7 @@ MonoBehaviour:
   - {fileID: 1762419455}
   - {fileID: 1762419453}
   - {fileID: 1762419454}
+  - {fileID: 1762419581}
   suppressAllAutoSelections: 0
 --- !u!114 &1762419457
 MonoBehaviour:
@@ -13346,6 +13349,25 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 2
   durationOLD: 0
+--- !u!114 &1762419581
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 797
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Assets/Scenes/AAADirect Examination/MICHAEL DIRECT FROM SALLY.unity
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &1902388655
 GameObject:
   m_ObjectHideFlags: 0
@@ -13427,7 +13449,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1913490734

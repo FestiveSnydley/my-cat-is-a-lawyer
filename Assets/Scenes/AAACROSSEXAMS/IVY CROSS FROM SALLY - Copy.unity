@@ -1135,7 +1135,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &941195763
@@ -1849,6 +1849,8 @@ GameObject:
   - component: {fileID: 1762419625}
   - component: {fileID: 1762419624}
   - component: {fileID: 1762419623}
+  - component: {fileID: 1762419628}
+  - component: {fileID: 1762419627}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1890,7 +1892,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2770.7095
     y: -4364.3564
-    width: 75
+    width: 77.956985
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1937,19 +1939,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 3279.0437, y: 4612.1377}
+  scrollPos: {x: 3254.4763, y: 4382.797}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 403.33334
-  zoom: 0.4
+  zoom: 0.31
   scrollViewRect:
     serializedVersion: 2
     x: -810.0176
     y: -920.02234
     width: 1939.0176
     height: 2009.5223
-  selectedBlocks: []
-  selectedCommands: []
+  selectedBlocks:
+  - {fileID: 1762419600}
+  selectedCommands:
+  - {fileID: 1762419627}
   variables:
   - {fileID: 1762418854}
   - {fileID: 1762419218}
@@ -2264,7 +2268,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -499.7397
     y: -2720.8271
-    width: 175
+    width: 174.73117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2367,7 +2371,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 359.65344
     y: -3533.535
-    width: 128.33333
+    width: 129.56989
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2405,7 +2409,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -72.237686
     y: -3976.405
-    width: 133.33333
+    width: 133.87097
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2439,7 +2443,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -87.83075
     y: -3544.8064
-    width: 155
+    width: 148.92473
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2524,7 +2528,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 192.9793
     y: -3746.304
-    width: 208.33333
+    width: 209.13979
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2559,7 +2563,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 683.8772
     y: -3705.7625
-    width: 173.33333
+    width: 174.73117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -2866,7 +2870,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 313.50873
     y: -3978.3108
-    width: 220
+    width: 217.74193
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3698,7 +3702,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 365.72467
     y: -4154.234
-    width: 120
+    width: 118.81721
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -3801,7 +3805,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -66.50931
     y: -3754.8987
-    width: 110
+    width: 108.064514
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -4985,7 +4989,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -491.76178
     y: -2155.9783
-    width: 118.33333
+    width: 118.81721
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5013,7 +5017,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -685.38086
     y: -2452.2634
-    width: 115
+    width: 114.51613
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -5042,7 +5046,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1382.9048
     y: -2159.0264
-    width: 96.666664
+    width: 97.31183
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6838,7 +6842,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 669.0688
     y: -2414.2388
-    width: 165
+    width: 163.97849
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6867,7 +6871,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 341.92554
     y: -2217.5254
-    width: 155
+    width: 155.37634
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6897,7 +6901,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -248.50249
     y: -2465.5728
-    width: 143.33333
+    width: 142.47311
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -6928,7 +6932,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -1975.6936
     y: -2733.0007
-    width: 71.666664
+    width: 71.50538
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7058,7 +7062,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -403.86194
     y: -1001.25476
-    width: 93.33333
+    width: 93.01076
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -7272,7 +7276,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 858.40247
     y: -2647.097
-    width: 118.33333
+    width: 114.51613
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9134,7 +9138,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -898.5104
     y: -2133.722
-    width: 161.66666
+    width: 161.82796
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -9204,7 +9208,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -717.0817
     y: -1921.0543
-    width: 175
+    width: 174.73117
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10517,7 +10521,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -211.41492
     y: -1960.3405
-    width: 200
+    width: 200.53763
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -10954,7 +10958,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -69.17692
     y: -2119.1497
-    width: 186.66666
+    width: 187.63441
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12082,7 +12086,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 913.4896
     y: -2104.3882
-    width: 235
+    width: 239.24731
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -12686,7 +12690,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2036.7483
     y: -2267.0073
-    width: 170
+    width: 170.43011
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13127,7 +13131,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2283.8433
     y: -2508.483
-    width: 156.66666
+    width: 157.52689
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13444,7 +13448,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2793.9314
     y: -4185.571
-    width: 155
+    width: 155.37634
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13646,7 +13650,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2585.9312
     y: -4017.5747
-    width: 130
+    width: 131.72043
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13727,7 +13731,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2991.2646
     y: -4001.5745
-    width: 108.33333
+    width: 103.76344
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13834,10 +13838,10 @@ MonoBehaviour:
       Atticus right: The defense also
       rests, your honor.
 
-      
 
-      Judge middle: Very well, members of the
-      jury, you may leave the courtroom to begin deliberation.
+
+      Judge middle: Very well, members of the jury, you
+      may leave the courtroom to begin deliberation.
 
 '
   clearPrevious:
@@ -13889,7 +13893,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: -2751.2651
     y: -3740.2412
-    width: 70
+    width: 69.35484
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -13905,10 +13909,12 @@ MonoBehaviour:
   - {fileID: 1762419618}
   - {fileID: 1762419626}
   - {fileID: 1762419625}
+  - {fileID: 1762419628}
   - {fileID: 1762419620}
   - {fileID: 1762419619}
   - {fileID: 1762419624}
   - {fileID: 1762419623}
+  - {fileID: 1762419627}
   suppressAllAutoSelections: 0
 --- !u!114 &1762419601
 MonoBehaviour:
@@ -13928,7 +13934,7 @@ MonoBehaviour:
     stringRef: {fileID: 0}
     stringVal: 'Atticus right: The defense also rests, your honor.
 
-      
+
 
       Judge
       middle: Very well, members of the jury, you may leave the courtroom to begin
@@ -15105,6 +15111,44 @@ MonoBehaviour:
   move: 1
   shiftIntoPlace: 0
   waitUntilFinished: 0
+--- !u!114 &1762419627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 845
+  indentLevel: 1
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Assets/Scenes/AAAVERDICT/VERDICT - Copy.unity
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
+--- !u!114 &1762419628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 844
+  indentLevel: 1
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Assets/Scenes/AAAVERDICT/VERDICT - Copy.unity
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &1902388655
 GameObject:
   m_ObjectHideFlags: 0
@@ -15186,7 +15230,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1913490734

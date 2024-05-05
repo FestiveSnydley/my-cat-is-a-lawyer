@@ -1056,7 +1056,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &941195763
@@ -1438,6 +1438,7 @@ GameObject:
   - component: {fileID: 1762419369}
   - component: {fileID: 1762419368}
   - component: {fileID: 1762419367}
+  - component: {fileID: 1762419371}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1537,8 +1538,9 @@ MonoBehaviour:
     width: 1939.0176
     height: 2009.5223
   selectedBlocks:
-  - {fileID: 1762419232}
-  selectedCommands: []
+  - {fileID: 1762418858}
+  selectedCommands:
+  - {fileID: 1762419371}
   variables:
   - {fileID: 1762418854}
   - {fileID: 1762419218}
@@ -1591,7 +1593,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 243.46841
+    x: 246.13516
     y: -1444.8135
     width: 74
     height: 40
@@ -1609,6 +1611,7 @@ MonoBehaviour:
   - {fileID: 1762419347}
   - {fileID: 1762419346}
   - {fileID: 1762419345}
+  - {fileID: 1762419371}
   suppressAllAutoSelections: 0
 --- !u!114 &1762418886
 MonoBehaviour:
@@ -9955,6 +9958,26 @@ MonoBehaviour:
   scope: 2
   key: TAPES
   value: 0
+--- !u!114 &1762419371
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762418838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00d03ae0919f04264b018681ed534177, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 577
+  indentLevel: 0
+  _sceneName:
+    stringRef: {fileID: 0}
+    stringVal: Assets/ScAssets/Scenes/AAADirect Examination/FIONA DIRECT FROM ATTICUS.unityenes/AAACROSSEXAMS/SAM
+      CROSS FROM ATTICUS.unity
+  loadingImage: {fileID: 0}
+  sceneNameOLD: 
 --- !u!1 &1902388655
 GameObject:
   m_ObjectHideFlags: 0
@@ -10036,7 +10059,7 @@ SpriteRenderer:
   m_Size: {x: 28.74375, y: 32.85}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1913490734
