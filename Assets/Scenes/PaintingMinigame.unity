@@ -984,6 +984,7 @@ GameObject:
   - component: {fileID: 1467291107}
   - component: {fileID: 1467291106}
   - component: {fileID: 1467291113}
+  - component: {fileID: 1467291114}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1050,7 +1051,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 67
     y: 75.10637
-    width: 93.40425
+    width: 96.15381
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1078,23 +1079,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: 612.92444, y: 62.685497}
+  scrollPos: {x: 457.3808, y: -303.68246}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 400
-  zoom: 0.94000006
+  blockViewHeight: 281
+  zoom: 0.52000046
   scrollViewRect:
     serializedVersion: 2
     x: -343
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1467291086}
-  selectedCommands:
-  - {fileID: 1467291089}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1467291093}
+  - {fileID: 1467291114}
   description: 
   stepPause: 0
   colorCommands: 1
@@ -1369,7 +1369,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 63.600037
     y: 185.69998
-    width: 93.40425
+    width: 96.15381
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1505,7 +1505,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 54.80005
     y: 301.69998
-    width: 126.59574
+    width: 128.84608
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1666,7 +1666,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 60.267086
     y: 428.80396
-    width: 158.93616
+    width: 171.15375
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
@@ -1697,7 +1697,7 @@ MonoBehaviour:
   itemId: 22
   indentLevel: 0
   anyVar:
-    variable: {fileID: 0}
+    variable: {fileID: 1467291114}
     data:
       animatorData:
         animatorRef: {fileID: 0}
@@ -1707,7 +1707,7 @@ MonoBehaviour:
         audioSourceVal: {fileID: 0}
       booleanData:
         booleanRef: {fileID: 0}
-        booleanVal: 0
+        booleanVal: 1
       collectionData:
         collectionRef: {fileID: 0}
         collectionVal: {fileID: 0}
@@ -1834,6 +1834,21 @@ MonoBehaviour:
   vector3Data:
     vector3Ref: {fileID: 0}
     vector3Val: {x: 0, y: 0, z: 0}
+--- !u!114 &1467291114
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467291083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scope: 2
+  key: PORTRAIT
+  value: 0
 --- !u!1 &1472113917
 GameObject:
   m_ObjectHideFlags: 0
