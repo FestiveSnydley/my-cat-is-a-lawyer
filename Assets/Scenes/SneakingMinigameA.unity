@@ -443,6 +443,8 @@ GameObject:
   - component: {fileID: 267031335}
   - component: {fileID: 267031334}
   - component: {fileID: 267031333}
+  - component: {fileID: 267031347}
+  - component: {fileID: 267031346}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -452,7 +454,7 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &267031333
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -654,7 +656,7 @@ MonoBehaviour:
   storyText: Good luck!
   description: 
   character: {fileID: 460592959}
-  portrait: {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  portrait: {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -682,7 +684,7 @@ MonoBehaviour:
     next by pressing [Z].
   description: 
   character: {fileID: 460592959}
-  portrait: {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  portrait: {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -710,7 +712,7 @@ MonoBehaviour:
     Make sure to avoid the cameras by HIDING [Z] when you''re able to. '
   description: 
   character: {fileID: 460592959}
-  portrait: {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  portrait: {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   voiceOverClip: {fileID: 0}
   showAlways: 1
   showCount: 1
@@ -759,7 +761,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d02d9822eec54c98afe95bb497211b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scope: 1
+  scope: 2
   key: MiniB_Tutorial
   value: 0
 --- !u!114 &267031341
@@ -1052,6 +1054,8 @@ MonoBehaviour:
   - {fileID: 267031336}
   - {fileID: 267031335}
   - {fileID: 267031333}
+  - {fileID: 267031347}
+  - {fileID: 267031346}
   - {fileID: 267031334}
   suppressAllAutoSelections: 0
 --- !u!114 &267031344
@@ -1081,7 +1085,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 267031343}
   selectedCommands:
-  - {fileID: 267031333}
+  - {fileID: 267031336}
   variables:
   - {fileID: 267031340}
   description: 
@@ -1109,6 +1113,41 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &267031346
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267031332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbd8c931f22994b9d90e2037fffaa770, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 10
+  indentLevel: 1
+  _targetGameObject:
+    gameObjectRef: {fileID: 0}
+    gameObjectVal: {fileID: 1213904889}
+  activeState:
+    booleanRef: {fileID: 0}
+    booleanVal: 1
+  targetGameObjectOLD: {fileID: 0}
+--- !u!114 &267031347
+MonoBehaviour:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 267031332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fa968f01a7f9496bb50e13dfe16760d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 9
+  indentLevel: 0
 --- !u!1 &379988130
 GameObject:
   m_ObjectHideFlags: 0
@@ -1261,7 +1300,7 @@ MonoBehaviour:
   nameColor: {r: 1, g: 1, b: 1, a: 1}
   soundEffect: {fileID: 0}
   portraits:
-  - {fileID: 21300000, guid: 0ee49c5ce54803a4ba11108d389ccc81, type: 3}
+  - {fileID: 21300000, guid: d6a9ba878a9906c47a981b1530894778, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 
@@ -4116,7 +4155,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000015259, y: -255}
+  m_AnchoredPosition: {x: 0.000015259, y: -163}
   m_SizeDelta: {x: 771.5953, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1784678735
@@ -4148,8 +4187,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4284933375
+  m_fontColor: {r: 1, g: 0.8931296, b: 0.39811313, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
