@@ -240,8 +240,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1197664289
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1003918570
 RectTransform:
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 1760877748}
   - component: {fileID: 1760877747}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: PlayerInventory
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

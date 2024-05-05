@@ -792,6 +792,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b616068719eb942a55d6acc7a8d33a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  initialItems: []
 --- !u!1 &591831377
 GameObject:
   m_ObjectHideFlags: 0
@@ -2714,7 +2715,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 1
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 1386920597
+  m_SortingLayerID: 0
   m_SortingOrder: -1
   m_TargetDisplay: 0
 --- !u!224 &1198574869

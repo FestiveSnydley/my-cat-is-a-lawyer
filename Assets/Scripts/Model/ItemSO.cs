@@ -16,6 +16,9 @@ public class ItemSO : ScriptableObject
     public string Name { get; set; }
 
     [field: SerializeField]
+    public string InternalName { get; set; }
+
+    [field: SerializeField]
     [field: TextArea]
     public string Description { get; set; }
 

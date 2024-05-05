@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEditor.Progress;
 
 
 /// <summary>
@@ -75,7 +76,7 @@ public class InventoryController : MonoBehaviour
         Debug.Log("Description requested.");
 
         // Retrieve the actual item in the inventory and its associated data.
-        Item inventoryItem = inventoryData.GetItemAt(itemIndex);
+        InventoryItem inventoryItem = inventoryData.GetItemAt(itemIndex);
 
         // If the item is empty, no further action is taken.
         if (inventoryItem.IsEmpty) { 
@@ -88,49 +89,7 @@ public class InventoryController : MonoBehaviour
 
         // Update the inventory page UI with the item's data.
         inventoryPageUI.UpdateDescription(itemIndex, item.ItemImage,
-            item.name, item.Description);
-    }
-
-    /// <summary>
-    /// Toggle the pause state of the inventory.
-    /// </summary>
-    public void TogglePause()
-    {
-        isPaused = !isPaused;
-    }
-
-    /// <summary>
-    /// Pause, stopping the player from accessing their inventory.
-    /// </summary>
-    public static void PauseInventory()
-    {
-        isPaused = true;
-    }
-
-    /// <summary>
-    /// Unpause and allow the player to access their inventory once more.
-    /// </summary>
-    public static void UnpauseInventory()
-    {
-        isPaused = false;
-    }
-
-
-    public void LoadInbetween()
-    {
-       SceneManager.LoadScene("Inbetween");
-    }
-
-    /// <summary>
-    /// Load the inventory screen if it isn't loaded already.
-    /// </summary>
-    public static void InventorySummon()
-    {
-        Scene inventoryScene = SceneManager.GetSceneByName("InventoryScreen");
-        if (!inventoryScene.isLoaded)
-        {
-            SceneManager.LoadScene("InventoryScreen", LoadSceneMode.Additive);
-        }
+            item.Name, item.Description);
     }
 
     /// <summary>
@@ -168,4 +127,56 @@ public class InventoryController : MonoBehaviour
         }
         
     }
+
+    public void Add(InventoryItem item)
+    {
+        inventoryData.AddItem(item);
+    }
+    public void Replace(InventoryItem oldItem, InventoryItem newItem)
+    {
+        inventoryData.ReplaceItem(oldItem, newItem);
+    }
+
+    public void DebugSuccess()
+    {
+        Debug.Log("Successfully accessed inventory.");
+    }
+
+
+    /// <summary>
+    /// Toggle the pause state of the inventory.
+    /// </summary>
+    public static void TogglePause()
+    {
+        isPaused = !isPaused;
+    }
+
+    /// <summary>
+    /// Pause, stopping the player from accessing their inventory.
+    /// </summary>
+    public static void PauseInventory()
+    {
+        isPaused = true;
+    }
+
+    /// <summary>
+    /// Unpause and allow the player to access their inventory once more.
+    /// </summary>
+    public static void UnpauseInventory()
+    {
+        isPaused = false;
+    }
+
+    /// <summary>
+    /// Load the inventory screen if it isn't loaded already.
+    /// </summary>
+    public static void InventorySummon()
+    {
+        Scene inventoryScene = SceneManager.GetSceneByName("InventoryScreen");
+        if (!inventoryScene.isLoaded)
+        {
+            SceneManager.LoadScene("InventoryScreen", LoadSceneMode.Additive);
+        }
+    }
+
 }
