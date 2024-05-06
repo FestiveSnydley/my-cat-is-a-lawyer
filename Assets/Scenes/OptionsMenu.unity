@@ -1069,7 +1069,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 1197664289
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_TargetDisplay: 0
 --- !u!224 &358839698
 RectTransform:
@@ -1629,7 +1629,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1197664289
   m_SortingLayer: 4
-  m_SortingOrder: 5
+  m_SortingOrder: 8
   m_Sprite: {fileID: 21300000, guid: 2e33a3f531b6adc4f9d8a99c83e2ba2d, type: 3}
   m_Color: {r: 0.9622642, g: 0.34950158, b: 0.34950158, a: 1}
   m_FlipX: 0
@@ -2673,7 +2673,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1197664289
   m_SortingLayer: 4
-  m_SortingOrder: 4
+  m_SortingOrder: 7
   m_Sprite: {fileID: 21300000, guid: 6183606661e6dd54792dd8adaf1ab45f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

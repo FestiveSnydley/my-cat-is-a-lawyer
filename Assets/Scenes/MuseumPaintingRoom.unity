@@ -1446,7 +1446,6 @@ GameObject:
   - component: {fileID: 1379537486}
   - component: {fileID: 1379537485}
   - component: {fileID: 1379537487}
-  - component: {fileID: 1379537488}
   - component: {fileID: 1379537500}
   - component: {fileID: 1379537499}
   - component: {fileID: 1379537498}
@@ -1636,7 +1635,6 @@ MonoBehaviour:
   description: 
   eventHandler: {fileID: 1379537487}
   commandList:
-  - {fileID: 1379537488}
   - {fileID: 1379537449}
   - {fileID: 1379537442}
   - {fileID: 1379537441}
@@ -1658,7 +1656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  scrollPos: {x: -220.15578, y: 162.36151}
+  scrollPos: {x: 41.207775, y: 108.952385}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
   blockViewHeight: 281
@@ -1670,9 +1668,9 @@ MonoBehaviour:
     width: 1114
     height: 859
   selectedBlocks:
-  - {fileID: 1379537500}
+  - {fileID: 1379537444}
   selectedCommands:
-  - {fileID: 1379537491}
+  - {fileID: 1379537449}
   variables:
   - {fileID: 1379537450}
   - {fileID: 1379537456}
@@ -3343,62 +3341,6 @@ MonoBehaviour:
   parentBlock: {fileID: 1379537444}
   suppressBlockAutoSelect: 0
   waitForFrames: 1
---- !u!114 &1379537488
-MonoBehaviour:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379537438}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 95d9ff288f3904c05ada7ac9c9a075bb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemId: 148
-  indentLevel: 0
-  description: 
-  delay: 0
-  invokeType: 0
-  staticEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 803382331}
-        m_TargetAssemblyTypeName: InventoryHandler, Assembly-CSharp
-        m_MethodName: InvSummon
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  booleanParameter:
-    booleanRef: {fileID: 0}
-    booleanVal: 0
-  booleanEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  integerParameter:
-    integerRef: {fileID: 0}
-    integerVal: 0
-  integerEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  floatParameter:
-    floatRef: {fileID: 0}
-    floatVal: 0
-  floatEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  stringParameter:
-    stringRef: {fileID: 0}
-    stringVal: 
-  stringEvent:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &1379537489
 MonoBehaviour:
   m_ObjectHideFlags: 2
