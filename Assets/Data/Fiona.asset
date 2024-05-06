@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3b46a014c2011434bbaf501d4ac697fe, type: 3}
-  m_Name: Sally
+  m_Name: Fiona
   m_EditorClassIdentifier: 
-  <Name>k__BackingField: Sally Enemen
-  <InternalName>k__BackingField: Sally
-  <Description>k__BackingField: The prosecutor assigned to Ivy's trial. She seems
-    a little mean.
-  <ItemImage>k__BackingField: {fileID: 21300000, guid: 1cdf33cda96a9e14cb852369225843c9, type: 3}
+  <Name>k__BackingField: Fiona Rensic
+  <InternalName>k__BackingField: Fiona
+  <Description>k__BackingField: A forensic scientist for the MYPD. She's sympathetic
+    towards your cause.
+  <ItemImage>k__BackingField: {fileID: 21300000, guid: 2c55880ab2bdffe488276e8e486c09a0, type: 3}

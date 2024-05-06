@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61dddfdc5e0e44ca298d8f46f7f5a915, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedFlowchart: {fileID: 0}
+  selectedFlowchart: {fileID: 1609591183}
 --- !u!4 &740869081
 Transform:
   m_ObjectHideFlags: 1
@@ -687,22 +687,25 @@ MonoBehaviour:
   indentLevel: 0
   conversationText:
     stringRef: {fileID: 0}
-    stringVal: 'atticus normal right: My name is Atticus and I''m a housecat.
-
-      atticus:
-      Or I was at least.
-
-      atticus: My owner got into some trouble, something
-      about art, I don''t really get it but now I''m going to defend her in court.
-
-      atticus:
-      So that brings me here, the Mew York Museum today to collect evidence.
-
-      atticus:
-      Well, let''s see if I can help my owner out in this trial.
-
-      hide atticus
-      "offscreen left":'
+    stringVal: "Narrator: The museum buzzed with anticipation on the day of the theft,
+      a landmark anniversary drawing crowds like never before. \nNarrator: But amidst
+      the celebration, a shadow lurked, a shadow that would soon cast doubt and suspicion
+      over one of its own.\r\nNarrator: The Opportunity, a prized painting worth
+      a staggering sum, vanished into thin air, leaving behind a void both in the
+      gallery and in the hearts of those who cherished it. \nNarrator: But as whispers
+      of intrigue swept through the halls, our intrepid cat detective, Atticus, knew
+      one thing for certain: his owner, Ivy, was being unjustly accused.\nNarrator:
+      Now, as the trial unfolds and the truth hangs in the balance, Atticus must
+      navigate the twists and turns of the courtroom, seeking justice amidst a sea
+      of uncertainty. \nNarrator: For in the halls of justice, as in the halls of
+      the museum, truth is the rarest treasure of all.\r\nNarrator: With Ivy's fate
+      hanging in the balance, Atticus is not just a detective\u2014he's her last
+      hope for redemption\natticus normal right: My name is Atticus and I'm a housecat.\natticus:
+      Or I was at least.\natticus: My owner got into some trouble, something about
+      art, I don't really get it but now I'm going to defend her in court.\natticus:
+      So that brings me here, the Mew York Museum today to collect evidence.\natticus:
+      Well, let's see if I can help my owner out in this trial.\nhide atticus \"offscreen
+      left\":"
   clearPrevious:
     booleanRef: {fileID: 0}
     booleanVal: 1
@@ -776,7 +779,7 @@ MonoBehaviour:
   scrollPos: {x: 149.49922, y: 42.68326}
   variablesScrollPos: {x: 0, y: 0}
   variablesExpanded: 1
-  blockViewHeight: 375
+  blockViewHeight: 403
   zoom: 0.9100001
   scrollViewRect:
     serializedVersion: 2
@@ -784,10 +787,8 @@ MonoBehaviour:
     y: -340
     width: 1114
     height: 859
-  selectedBlocks:
-  - {fileID: 1609591182}
-  selectedCommands:
-  - {fileID: 1609591180}
+  selectedBlocks: []
+  selectedCommands: []
   variables:
   - {fileID: 1609591189}
   - {fileID: 1609591190}
@@ -1142,6 +1143,57 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1094648882}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1719917044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1719917046}
+  - component: {fileID: 1719917045}
+  m_Layer: 0
+  m_Name: Narrator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1719917045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719917044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25fb867d2049d41f597aefdd6b19f598, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: Narrator
+  nameColor: {r: 1, g: 1, b: 1, a: 1}
+  soundEffect: {fileID: 0}
+  portraits: []
+  portraitsFace: 0
+  setSayDialog: {fileID: 0}
+  description: 
+--- !u!4 &1719917046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1719917044}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1808780605
@@ -1657,6 +1709,7 @@ SceneRoots:
   - {fileID: 740869081}
   - {fileID: 1882099696}
   - {fileID: 1305776492}
+  - {fileID: 1719917046}
   - {fileID: 1609591184}
   - {fileID: 1829530842}
   - {fileID: 1691941236}
